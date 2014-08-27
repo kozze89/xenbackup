@@ -15,7 +15,7 @@ import calendar
 from datetime import datetime
 from urlparse import urlparse
 
-logging.basicConfig()
+logging.basicConfig(filename='backup.log', level=logging.DEBUG)
 log = logging.getLogger("XenBackup")
 
 def setup_logging(args):
